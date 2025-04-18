@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Design</title>
+  <style>
+    
+    body {
+      background-color: #FFFEEA; 
+      color: #343153; 
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    h1, h2, h3 {
+      color: #4E4B72; 
+    }
+
+    
+    p {
+      line-height: 1.5;
+      margin-bottom: 1em;
+    }
+
+    
+    a:link,
+    a:visited {
+      color: #A38963; 
+      text-decoration: none;
+    }
+    
+    a:hover,
+    a:active {
+      color: #FFF7FA;           
+      background-color: #A38963; 
+      text-decoration: underline;
+    }
+
+    
+    .btn-cta {
+      background-color: #A39F53; 
+      color: #FFFEEA;            
+      padding: 0.5em 1em;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    
+    .highlight-box {
+      background-color: #FFF7FA; 
+      border: 2px solid #C3BFBC; 
+      padding: 1em;
+      margin: 1em 0;
+    }
+
+    
+    .float-left {
+      float: left;
+      margin-right: 1em;
+      margin-bottom: 1em;
+      max-width: 40%;
+    }
+
+    
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Business Site</h1>
+    <p>This is the header section styled with our chosen color palette.</p>
+  </header>
+
+  <section class="clearfix">
+    <img src="AboutUs_Images/sample-image.jpg" alt="Sample Business Image" class="float-left">
+    <h2>About Our Business</h2>
+    <p>
+      This section describes the core values and offerings of our business. The
+      content is presented alongside an image that is floated to the left, so text
+      wraps around it gracefully.
+    </p>
+  </section>
+
+  <section>
+    <div class="highlight-box">
+      <h2>Call to Action</h2>
+      <p>Learn more about our services by exploring further. This area is specially highlighted using our color scheme.</p>
+      <button class="btn-cta">Click Here</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Business Name. All rights reserved.</p>
+    <p>Find us on:
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>

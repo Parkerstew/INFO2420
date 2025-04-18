@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Print Button Only</title>
+  <style>
+    /* page reset & palette */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #FFFEEA;           /* from your palette */
+      color: #343153;                      /* text color */
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* print button styled with your purple (#4E4B72) */
+    #printBtn {
+      background-color: #4E4B72;           /* purple from your palette */
+      color: #FFFEEA;                      /* light text for contrast */
+      padding: 0.5em 1em;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 0.25em;
+    }
+
+    /* hover state */
+    #printBtn:hover {
+      background-color: #FFF7FA;           /* light highlight */
+      color: #4E4B72;                      /* purple text on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <button id="printBtn">Print Page</button>
+
+  <script>
+    document.getElementById('printBtn')
+            .addEventListener('click', () => window.print());
+  </script>
+
+</body>
+</html>
+
+
+
