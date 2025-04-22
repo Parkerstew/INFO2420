@@ -30,14 +30,18 @@
     }
   </style>
 
-  <script type="text/javascript">
-    // Preload logo rollover images (Extreme Honeymoons Logo)
-    var logoA = new Image(),
-        logoB = new Image();
-    logoA.src = "Images/Logo1.jpg";
-    logoB.src = "Images/Logo2.jpg";
+  <script language="javascript=" type="text/javascript">
+    
+    PrintButton1 = new Image
+    PrintButton2 = new Image
+  if (document.images)  {
+    logo1 = new Image(),
+    logo2 = new Image();
+    logo1.src = "Images/Logo1.jpg";
+    logo2.src = "Images/Logo2.jpg";
+  }
 
-    // Gallery data
+    
     var imgArray = [
       'Image1Lg.jpg',
       'Image2Lg.jpg',
@@ -60,12 +64,12 @@
     }
 
     function preloadImages() {
-      // preload gallery images
+      
       for (var i = 0; i < imgArray.length; i++) {
         var tmp = new Image();
         tmp.src = imgPath + imgArray[i];
       }
-      // logoA and logoB were already assigned src above
+     
     }
   </script>
 </head>
@@ -88,14 +92,14 @@
     </div>
 
     <!-- Logo rollover -->
-    <div>
-      <a href="#"
-         onmouseover="document.getElementById('logo').src='Images/Logo2.jpg';"
-         onmouseout="document.getElementById('logo').src='Images/Logo1.jpg';">
+    <div id="logo">
+      
+    <a href="logo.html" onMouseOver="document.logo.src=Logo2,src;"
+         oMouseOut="document.logo.src=Logo1.src;">
         <img src="Images/Logo1.jpg"
              alt="Logo"
              width="100" height="100"
-             id="logo"
+             name="Logo"
              style="border:none;">
       </a>
     </div>
