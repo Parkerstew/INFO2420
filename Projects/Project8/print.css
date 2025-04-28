@@ -1,0 +1,180 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+body    {
+			background-color: #fff6e6;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: medium;
+			color: #4E4B72;
+			height: auto;
+	
+}
+
+header   {
+			width: 900px;
+			height: 200px;
+			background-color: #F3E2D4;
+			text-align: center;
+			padding-top: 10px;
+			margin: auto;
+	
+	
+}
+
+section   {
+			width: 900px;
+			background-image: url('Images/2colback.jpg');
+			background-repeat: repeat-y;
+			overflow: hidden;
+			margin: auto;
+		
+}
+
+nav {
+	float: left;
+	width: 250px;
+	text-align: center;
+}
+
+article {
+	float: left;
+	width: 650px;
+	text-align: center;
+	background-color: #F3E2D4;
+}
+
+footer {
+	text-align: center;
+	width: 900px;
+	height: 70px;
+	background-color: #F3E2D4;
+	margin: auto;
+}
+
+.logoleft {
+	float: left;
+	padding-top: 0px;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+
+nav a {
+	border: 6px inset #CCCCCC;
+	background-color: #4E4B72;
+	line-height: 250%;
+	font-weight: bold;
+	font-size: 35px;
+	color: #FFEEE6;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 20px;
+	font-family: Vivaldi;
+	
+}
+
+nav a:hover {
+	color: #FFD380;
+	border: 2px outset #CCCCCC;
+	
+}
+
+h1 {
+	color: #4E4B72;
+	text-align: center;
+	font-size: xx-large;
+	
+	
+}
+
+p { color: #4E4B72;}
+
+
+
+    #thumbs, #image {
+
+      width: 600px;
+
+      border: solid 1px #000;
+
+      text-align: center;
+
+      margin: 0 auto;
+
+      color: #000;
+
+      background: #eee;
+
+      padding: 5px;
+
+    }
+
+    #thumbs {
+
+      margin-top: 10px;
+
+    }
+
+    #thumbs img {
+
+      border: solid 1px #000;
+
+      margin: 5px;
+
+    }
+
+    #image {
+
+      height: 400px;
+
+    }
+
+    .instructions {
+
+      font-style: italic;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.print-off{
+	display:none;
+}
+
+body{
+	background-color: white;
+	margin: auto;
+}
+
+header {
+	display:none;
+}
+
+section	{
+	width: 100%;
+}
+
+article	{
+	width: 95%;
+	margin: auto;
+	padding-right: 5px;
+}
+nav{
+	display:none;
+}
+
+footer	{
+	display:none;
+}

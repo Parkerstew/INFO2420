@@ -1,136 +1,124 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body    {
-			background-color: #fff6e6;
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: medium;
-			color: #4E4B72;
-			height: auto;
-	
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff6e6;
+    color: #343153;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
 }
 
-header   {
-			width: 900px;
-			height: 200px;
-			background-color: #F3E2D4;
-			text-align: center;
-			padding-top: 10px;
-			margin: auto;
-	
-	
+header {
+    width: 900px;
+    height: 200px;
+    background-color: #F3E2D4;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
 }
 
-section   {
-			width: 900px;
-			background-image: url('Images/2colback.jpg');
-			background-repeat: repeat-y;
-			overflow: hidden;
-			margin: auto;
-		
+section {
+    width: 900px;
+    background-image: url('2colback.jpg');
+    background-repeat: repeat-y;
+    overflow: hidden;
+    margin: 0 auto 40px auto;
 }
 
 nav {
-	float: left;
-	width: 250px;
-	text-align: center;
+    float: left;
+    width: 250px;
+    text-align: center;
 }
 
 article {
-	float: left;
-	width: 650px;
-	text-align: center;
-	background-color: #F3E2D4;
+    float: right;       /* push it to the right of your nav */
+    width: 650px;
+    text-align: left;
+    padding: 20px;
+    margin-top: 0;      /* hug it up under the header */
+    background-color: #F3E2D4;
+    border-radius: 12px;
+    line-height: 1.6;
 }
 
 footer {
-	text-align: center;
-	width: 900px;
-	height: 70px;
-	background-color: #F3E2D4;
-	margin: auto;
-}
-
-.logoleft {
-	float: left;
-	padding-top: 0px;
-	padding-left: 5px;
-	padding-right: 10px;
+    text-align: center;
+    width: 900px;
+    height: 70px;
+    background-color: #F3E2D4;
+    margin: 0 auto;
 }
 
 nav a {
-	border: 6px inset #CCCCCC;
-	background-color: #4E4B72;
-	line-height: 250%;
-	font-weight: bold;
-	font-size: 35px;
-	color: #FFEEE6;
-	text-decoration: none;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-left: 20px;
-	font-family: Vivaldi;
-	
+    border: 6px inset #CCCCCC;
+    background-color: #4E4B72;
+    line-height: 250%;
+    font-weight: bold;
+    font-size: 35px;
+    color: #FFEEE6;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 0 10px 20px;
+    font-family: Vivaldi;
 }
 
 nav a:hover {
-	color: #FFD380;
-	border: 2px outset #CCCCCC;
-	
+    color: #FFD380;
+    border: 2px outset #CCCCCC;
 }
 
 h1 {
-	color: #4E4B72;
-	text-align: center;
-	font-size: xx-large;
-	
-	
+    font-size: 2em;
+    color: #4E4B72;
+    text-align: center;
+    margin: 0.5em 0;
 }
 
-p { color: #4E4B72;}
+h2 {
+    font-size: 1.75em;
+    color: #4E4B72;
+    border-bottom: 2px solid #4E4B72;
+    margin: 0.75em 0;
+    padding-bottom: 5px;
+}
 
+p {
+    margin: 1em 0;
+    color: #4E4B72;
+}
 
+img.float-right {
+    float: right;
+    margin: 0 0 10px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
 
-    #thumbs, #image {
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
-      width: 600px;
+hr {
+    border: none;
+    border-top: 2px dashed #aaa;
+    margin: 30px 0;
+}
 
-      border: solid 1px #000;
+a:link,
+ a:visited {
+    color: #A38963;
+    text-decoration: none;
+}
 
-      text-align: center;
+a:hover {
+    color: #FFF7FA;
+    background-color: #A38963;
+    text-decoration: underline;
+}
 
-      margin: 0 auto;
-
-      color: #000;
-
-      background: #eee;
-
-      padding: 5px;
-
-    }
-
-    #thumbs {
-
-      margin-top: 10px;
-
-    }
-
-    #thumbs img {
-
-      border: solid 1px #000;
-
-      margin: 5px;
-
-    }
-
-    #image {
-
-      height: 400px;
-
-    }
-
-    .instructions {
-
-      font-style: italic;
-
-    }

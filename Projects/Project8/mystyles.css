@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff6e6;
+    color: #343153;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+header {
+    width: 900px;
+    height: 200px;
+    background-color: #F3E2D4;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+/*  
+   Two-col background:
+   — left 250px is brown
+   — right is pale
+   This runs the full height of the section
+*/
+section {
+    width: 900px;
+    margin: 0 auto 40px;    /* center wrapper */
+    overflow: hidden;       
+    background-image: url('Images/2colback.jpg');
+    background-repeat: repeat-y;
+    background-position: left top;
+    padding: 0;
+	
+}
+
+nav {
+    float: left;
+    width: 250px;
+    text-align: center;
+    background: transparent; /* let the section’s brown show through */
+}
+
+article {
+    float: right;       /* push it to the right of your nav */
+    width: 650px;
+    text-align: left;
+    padding: 20px;
+    margin-top: 20;      /* hug it up under the header */
+    background-color: #F3E2D4;
+    border-radius: 12px;
+    line-height: 1.6;
+}
+
+
+
+footer {
+    text-align: center;
+    width: 900px;
+    height: 70px;
+    background-color: #F3E2D4;
+    margin: 0 auto;
+}
+
+nav a {
+    border: 6px inset #CCCCCC;
+    background-color: #4E4B72;
+    line-height: 250%;
+    font-weight: bold;
+    font-size: 35px;
+    color: #FFEEE6;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 0 10px 20px;
+    font-family: Vivaldi;
+}
+
+nav a:hover {
+    color: #FFD380;
+    border: 2px outset #CCCCCC;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4E4B72;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-size: 1.75em;
+    color: #4E4B72;
+    border-bottom: 2px solid #4E4B72;
+    margin: 0.75em 0;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 1em 0;
+    color: #4E4B72;
+}
+
+img.float-right {
+    float: right;
+    margin: 0 0 10px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #aaa;
+    margin: 30px 0;
+}
+
+a:link,
+a:visited {
+    color: #A38963;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFF7FA;
+    background-color: #A38963;
+    text-decoration: underline;
+}
+
+h1 {
+
+      font-size: 2em;
+
+      color: #4E4B72;
+
+      margin-bottom: 0.5em;
+
+    }
+
+    h2 {
+
+      font-size: 1.75em;
+
+      color: #4E4B72;
+
+      margin-top: 0.75em;
+
+      margin-bottom: 0.75em;
+
+    }
+
+    p {
+
+      margin: 1em 0;
+
+    }
+
+    
+
+    .float-right {
+
+      float: right;
+
+      margin-left: 1em;
+
+      margin-bottom: 1em;
+
+    }
+
+    
+
+    .clearfix::after {
+
+      content: "";
+
+      display: block;
+
+      clear: both;
+
+    }
+
+    
+
+    a:link,
+
+    a:visited {
+
+      color: #A38963;
+
+      text-decoration: none;
+
+    }
+
+    a:hover {
+
+      color: #FFF7FA;
+
+      background-color: #A38963;
+
+      text-decoration: underline;
+
+    }
+table {
+
+      width: 100%;             
+
+      border-collapse: collapse; 
+
+      border: none;            
+
+      margin: 20px 0;          
+
+    }
+
+    
+
+    th {
+
+      background-color: #4E4B72; 
+
+      color: #FFFEEA;           
+
+      padding: 0.75em;          
+
+      font-size: 1.1em;         
+
+      text-align: left;
+
+      border: none;             
+
+    }
+
+    
+
+    td {
+
+      background-color: #FFFEEA;        
+
+      border: 1px solid #C3BFBC;          
+
+      color: #343153;                    
+
+      padding: 0.75em;                   
+
+      font-size: 1em;                    
+
+      text-align: left;
+
+    }
+
+    
+
+    caption {
+
+      font-family: "Georgia", serif; 
+
+      font-size: 1.2em;              
+
+      padding: 0.5em;               
+
+      border-radius: 8px;           
+
+      background-color: #A38963;    
+
+      color: #FFFEEA;               
+
+      margin-bottom: 0.5em;         
+
+    }
+
+.splash-header {
+  width: 100%;
+  margin: 2em 0 3em;       
+  text-align: center;      
+}
+
+.splash-title {
+  font-size: 2.5em;
+  color: #4E4B72;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.splash-tagline {
+  display: block;
+  font-size: 1.25em;
+  font-weight: normal;
+  color: #666;
+  margin-top: 0.25em;
+}
+
+
+.imagemap-container {
+  text-align: center;
+  margin: 1.5em auto 3em;
+  max-width: 700px;       
+}
+
+
+.imagemap {
+  width: 100%;            
+  height: auto;
+  display: inline-block;
+}
+
+
+
