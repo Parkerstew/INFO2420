@@ -1,0 +1,91 @@
+/* ─── Page Background ───────────────────────── */
+body {
+    margin: 0;
+    padding: 0;
+    background: #e6f2ff;       /* baby-blue across the whole page */
+    color:      #003366;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* ─── Container ───────────────────────────── */
+  .container {
+    max-width:    900px;
+    margin:       0 auto;
+    padding:      1em;
+    color:        #003366;
+    background:   transparent; /* let the page-blue show through */
+    box-shadow:   0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  /* ─── Custom Fonts ────────────────────────── */
+  @font-face {
+    font-family: 'Quigley';
+    src: url('Quigley.eot');
+    src: local('Quigley'), url('fonts/Quigley.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Darkh4';
+    src: url('fonts/Darkh4.eot');
+    src: local('Darkh4'), url('fonts/Darkh4.ttf') format('truetype');
+  }
+  
+  /* ─── Headings ────────────────────────────── */
+  h1 {
+    font-family: Quigley, serif;
+    font-size:   2.5em;
+    margin:      0;
+    text-align:  center;
+    color:       #0055a5;     /* medium-blue */
+  }
+  h2 {
+    font-family: Darkh4, sans-serif;
+    font-size:   1.75em;
+    margin:      1.5em 0 0.5em;
+    color:       #0055a5;
+    border-bottom: 2px solid #cce0ff;  /* light-blue rule */
+    padding-bottom: 0.25em;
+  }
+  
+  /* ─── Page-header Rule ───────────────────── */
+  .page-header hr {
+    border: none;
+    border-top: 2px solid #cce0ff;      /* match h2 underline */
+    margin: 0.5em 0 1em;
+  }
+  
+  /* ─── Flex Link Grid ─────────────────────── */
+  .link-list {
+    list-style:    none;
+    margin:        0;
+    padding:       0;
+    display:       flex;
+    flex-wrap:     wrap;
+    gap:           0.75em 1em;          /* vertical & horizontal gaps */
+  }
+  .link-list li {
+    flex: 0 1 auto;
+  }
+  
+  /* ─── Cool Blue “Pill” Buttons ───────────── */
+  .link-list a {
+    display:         inline-block;
+    background:      linear-gradient(135deg, #4da8da, #006bb3);
+    color:           #ffffff;
+    padding:         0.5em 1.25em;
+    text-decoration: none;
+    border:          none;
+    border-radius:   999px;             /* fully rounded */
+    box-shadow:      0 2px 6px rgba(0,0,0,0.15);
+    font-weight:     bold;
+    transition:      background 0.3s, transform 0.1s;
+  }
+  .link-list a:hover {
+    background:      linear-gradient(135deg, #6fc0ff, #3385cc);
+    transform:       translateY(-2px);
+  }
+  .link-list a:active {
+    box-shadow:      inset 0 2px 4px rgba(0,0,0,0.2);
+    transform:       translateY(0);
+  }
+  
